@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab Two
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button size="default" color="primary" (click)="crearObservable()">Crear Observable</ion-button>
+  
+  <br>
+  <ion-item>
+    <ion-label position="stacked">Nombre Gatito</ion-label>
+    <ion-input [(ngModel)]="name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Imagen Http</ion-label>
+    <ion-input [(ngModel)]="img"></ion-input>
+  </ion-item>
+  <ion-button size="default" color="success" (click)="agregarGatito(name,img)">Agregar gatito</ion-button>
+</ion-content>
